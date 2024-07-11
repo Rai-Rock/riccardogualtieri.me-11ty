@@ -1,16 +1,16 @@
 {
-  "name": "hawksworx.com",
-  "version": "2.0.1",
-  "description": "Phil Hawksworth's personal website - hawksworx.com",
+  "name": "riccardogualtieri.me",
+  "version": "1.0.0",
+  "description": "Sito personale di Riccardo Gualtieri - riccardogualtieri.me",
   "scripts": {
     "dev": "npx eleventy --serve --quiet",
     "build": "eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/hawksworx.com"
+    "url": "https://github.com/Rai-Rock/riccardogualtieri.me-11ty"
   },
-  "author": "Phil Hawksworth",
+  "author": "Riccardo Gualtieri",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "2.0.0-canary.23",

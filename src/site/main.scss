@@ -1,18 +1,16 @@
-@import '_includes/_variables';
-@import '_includes/_mixins';
-@import '_includes/_syntax';
-@import '_includes/_themes';
-@import '_includes/_notes';
+@import "_includes/_variables";
+@import "_includes/_mixins";
+@import "_includes/_syntax";
+@import "_includes/_themes";
+@import "_includes/_notes";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @font-face {
-  font-family: Placard;
-  src: url('/fonts/placardmtstd-cond-webfont.woff2') format('woff2'),
-       url('/fonts/placardmtstd-cond-webfont.woff') format('woff');
-  font-display: swap;
+  font-family: "Lato", sans-serif;
 }
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -41,7 +39,7 @@ body {
   }
   header {
     position: sticky;
-    top:0;
+    top: 0;
   }
 }
 
@@ -80,7 +78,6 @@ body {
   }
 }
 
-
 .page-details {
   margin-top: 5em;
   padding-bottom: 5em;
@@ -101,15 +98,16 @@ a {
   border-bottom-width: 1px;
 }
 
-ul, ol {
-  padding-left:1em;
+ul,
+ol {
+  padding-left: 1em;
 }
 
 ul.tags {
   list-style: none;
-  margin-top:0.5em;
-  margin-left:0;
-  padding-left:0;
+  margin-top: 0.5em;
+  margin-left: 0;
+  padding-left: 0;
   font-size: 0.9em;
 
   li {
@@ -124,10 +122,14 @@ a.tag {
 }
 
 // Headings
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: arial, sans-serif;
-  padding-top:1em;
+  padding-top: 1em;
   line-height: 1.2;
+  paddin-bottom: 1em;
 }
 h1 {
   font-family: Placard, arial, sans-serif;
@@ -135,14 +137,20 @@ h1 {
   line-height: 1;
   text-transform: uppercase;
   font-weight: normal;
-  margin-top:0;
-  margin-bottom:0;
-  padding-top:0.3rem;
-  padding-bottom:0.4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
 }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.2em; }
-h4 { font-size: 1.1em; }
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.1em;
+}
 
 .no-wrap {
   white-space: nowrap;
@@ -151,15 +159,15 @@ h4 { font-size: 1.1em; }
 .avatar-large {
   width: 120px;
   border-radius: 4px;
-  border:solid 2px #fff;
+  border: solid 2px #fff;
   box-shadow: #000 0 0 4px;
 }
 
 .main {
   img {
     width: 100%;
-    padding-top:1em;
-    padding-bottom:1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
 
@@ -181,7 +189,7 @@ blockquote {
 
 .phonetic {
   font-size: 1.5rem;
-  margin-top:0;
+  margin-top: 0;
 }
 
 hr {
@@ -193,7 +201,7 @@ hr {
 form {
   border-radius: 2px;
   padding: 1em 2em;
-  margin: 2em -2em 1em -2em
+  margin: 2em -2em 1em -2em;
 }
 label small {
   opacity: 0.6em;
@@ -215,14 +223,14 @@ button {
   cursor: pointer;
   font-size: 1em;
   background-color: #555;
-  color:#fff;
+  color: #fff;
   font-family: Georgia, serif;
   border-style: none;
   padding: 0.5em 1em;
-  border-radius: 3px
+  border-radius: 3px;
 }
 .honey {
-  display:none;
+  display: none;
 }
 .needs-content {
   border-color: #af2a40;
@@ -230,11 +238,12 @@ button {
 
 .blog-list-item {
   padding: 1em 0 2em;
-  h2,h3 {
-    margin-top:0;
-    margin-bottom:0;
-    padding-top:0;
-    padding-bottom:0;
+  h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .by-line {
     margin-bottom: 0;
@@ -244,8 +253,8 @@ button {
     margin-bottom: 0;
   }
   img {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
 }
 img.flag {
@@ -254,12 +263,12 @@ img.flag {
 
 a.more-link {
   background-color: #eee;
-  display:inline-block;
+  display: inline-block;
 }
 
 img.external-link {
   width: 0.8em;
-  padding-left:0.4em;
+  padding-left: 0.4em;
   vertical-align: middle;
   opacity: 0.3;
 }
@@ -269,49 +278,46 @@ h2 img.external-link {
 
 .tweet {
   font-size: 0.9em;
-  background-color: rgba(0,0,0,0.03);
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
   padding: 2em 2em 1em;
   margin: 1em -2em 0.5em;
 }
 
-
-
 // Header
 header {
-
   ul.nav {
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 0.9em;
     list-style: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     li {
       display: inline;
     }
     a {
-      display:inline-block;
+      display: inline-block;
       padding: 4em 0.5em 0.2em 0.5em;
       border-bottom-style: none;
     }
     a.home {
-      padding-left:0.7em;
-      padding-right:0.7em;
+      padding-left: 0.7em;
+      padding-right: 0.7em;
     }
     a.blog {
-      padding-left:1em;
+      padding-left: 1em;
     }
   }
 }
 
 .search-ui,
 .teaser {
-  font-size:1.4em;
-  margin:0 0 2em 0;
+  font-size: 1.4em;
+  margin: 0 0 2em 0;
   padding: 0.5em 1em;
   border-radius: 3px;
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   span {
     display: block;
   }
@@ -338,20 +344,17 @@ pre {
 
 // footer
 footer {
-
-  .solid-footer{
+  .solid-footer {
     font-size: 0.7em;
     line-height: 1.5;
     padding: 3em 0;
   }
-
 
   @include bp(wide) {
     position: fixed;
     width: 45%;
     bottom: 0;
     left: 0;
-
   }
   .container {
     padding: 0;
@@ -363,7 +366,6 @@ footer {
 }
 
 .thumbnail-grid {
-
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -371,7 +373,7 @@ footer {
 
   a:link,
   a:visited {
-    border-bottom-style:none;
+    border-bottom-style: none;
     width: 22%;
     &:hover img,
     &:focus img {
@@ -382,29 +384,27 @@ footer {
   img {
     // width: 100%;
     border: solid 4px #fff;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     filter: grayscale(90%);
     transition-duration: 0.5s;
   }
 }
-
 
 .embed-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
-  margin-top:2em;
+  margin-top: 2em;
 }
-.embed-container iframe{
+.embed-container iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
 
 /*
  base colours
@@ -431,16 +431,16 @@ blockquote {
   color: mix(#333, #fff, 40%);
   background-color: #333;
   @include bp(wide) {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
   }
   a {
     color: #fff;
     border-style: none;
   }
 }
-.blog-list-item h2 a ,
+.blog-list-item h2 a,
 .blog-list-item h3 a {
-    color: #444;
+  color: #444;
 }
 form {
   background-color: #f9f9f9;
@@ -461,13 +461,17 @@ form {
     background-color: #fff;
   }
   ul.nav {
-    a:hover { background-color: rgba(255,255,255,.06); }
-    a.home:hover { background-color: #fff; }
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.06);
+    }
+    a.home:hover {
+      background-color: #fff;
+    }
   }
 }
 
 a.floating-lozenge {
-  border-style:none;
+  border-style: none;
   img {
     border-radius: 5px;
     box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.37);
@@ -483,24 +487,22 @@ a.floating-lozenge {
   }
 }
 
-
 .main figure {
-  
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   margin-bottom: 1em;
 
   img {
-    width:100%;
+    width: 100%;
     margin: 0;
-    padding:0
+    padding: 0;
   }
   figcaption {
     font-size: 0.8em;
     font-style: italic;
     text-align: center;
-    padding:0;
-    margin:-0.1em 0 0 0;
+    padding: 0;
+    margin: -0.1em 0 0 0;
     line-height: 1.4;
   }
 }

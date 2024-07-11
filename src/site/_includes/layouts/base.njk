@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" class="{{ pageClass }}">
+<html lang="it" class="{{ pageClass }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="/fonts/placardmtstd-cond-webfont.woff2" as="font" type="font/woff2" crossorigin>
     
     <link rel="stylesheet" href="/main.css">
-    <title>{%- if title -%}{{ title }}{%- else -%}Hawksworx - Phil Hawksworth{%- endif -%}</title>
+    <title>{%- if title -%}{{ title }}{%- else -%}Riccardo Gualtieri{%- endif -%}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Phil Hawksworth's home on the web. Read his blog, ask questions, and find coverage of his recent conference talks about web development.{%- endif -%}"/>
     <link rel="alternate" href="/feed.xml" title="Hawksworx blog feed, by Phil Hawksworth" type="application/atom+xml">
     {% include "favicons.njk" %}
@@ -36,14 +36,6 @@
         {% include "page-credits.njk" %}
         {% endblock %}
       </div>
-      <footer>
-        <div class="solid-footer">
-          <div class="container">
-          {% block prefooter %}{% endblock %}
-          {% include "footer.njk" %}
-          </div>
-        </div>
-      </footer>
     </div>
     <script src="/js/core.js"></script>
     <script src="/js/beta.js"></script>
